@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Propon</Title>
+      <Author>Windows User</Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>propon</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Object Editable="true">
+          <ID>DataType</ID>
+          <ToolTip>int</ToolTip>
+          <Default>string</Default>
+          <Function>
+          </Function>
+          <Type>
+          </Type>
+        </Object>
+        <Literal Editable="true">
+          <ID>PropertyName</ID>
+          <ToolTip>Name of Property</ToolTip>
+          <Default>PropertyName</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[private $DataType$ _$PropertyName$;
+        public $DataType$ $PropertyName$ {
+            get => _$PropertyName$;
+            set => SetValue(ref _$PropertyName$, value);
+        }]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

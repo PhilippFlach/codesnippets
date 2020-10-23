@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Propid</Title>
+      <Author>
+      </Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>propid</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>ClassName</ID>
+          <ToolTip>Classname</ToolTip>
+          <Default>ClassName</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Object Editable="true">
+          <ID>DataType</ID>
+          <ToolTip>DataType</ToolTip>
+          <Default>long</Default>
+          <Function>
+          </Function>
+          <Type>N/A</Type>
+        </Object>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[private $DataType$ _$ClassName$Id;
+        public $DataType$ $ClassName$Id {
+            get => $ClassName$?.$ClassName$Id ?? _$ClassName$Id; 
+            set => SetValue(ref _$ClassName$Id, value);
+        }]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
